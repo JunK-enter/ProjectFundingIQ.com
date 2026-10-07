@@ -1,4 +1,4 @@
-import { partnerTransition, partnerUrl } from "@/content/site";
+import { neilUrl, partnerTransition } from "@/content/site";
 import { Button } from "./Button";
 import { Container } from "./Container";
 import { Reveal } from "./Reveal";
@@ -35,7 +35,7 @@ export function NeilSection() {
               questions about the partner process.
             </p>
             <div className="mt-8">
-              <Button href={partnerUrl} external>
+              <Button href={neilUrl} external>
                 Talk With Neil
               </Button>
               <p className="mt-3 text-sm text-muted">{partnerTransition}</p>

@@ -1,5 +1,7 @@
 export const partnerUrl =
-  "https://partner.homewealthiq.com/recruiter/neil-okun";
+  "https://partner.homewealthiq.com/recruiter/neil-okun/apply";
+
+export const neilUrl = "https://partner.homewealthiq.com/recruiter/neil-okun";
 
 export const partnerTransition =
   "You’ll continue to the HomeWealthIQ partner experience.";
