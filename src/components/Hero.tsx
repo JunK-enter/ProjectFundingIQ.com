@@ -3,14 +3,13 @@ import Link from "next/link";
 import { heroTrades, partnerTransition, partnerUrl } from "@/content/site";
 import { Button } from "./Button";
 import { Container } from "./Container";
-import { Reveal } from "./Reveal";
 
 export function Hero() {
   return (
     <section className="pb-16 pt-6 sm:pb-20 sm:pt-8 lg:pb-24 lg:pt-10">
       <Container>
         <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-12">
-          <Reveal className="lg:col-span-6">
+          <div className="lg:col-span-6">
             <p className="eyebrow text-forest">
               Funding conversations for home improvement
             </p>
@@ -49,8 +48,8 @@ export function Hero() {
                 </li>
               ))}
             </ul>
-          </Reveal>
-          <Reveal className="lg:col-span-6" delay={0.08}>
+          </div>
+          <div className="lg:col-span-6">
             <div className="relative">
               <div className="relative aspect-[4/3] overflow-hidden rounded-[14px] sm:aspect-[5/4] lg:aspect-[4/5]">
                 <Image
@@ -59,10 +58,10 @@ export function Hero() {
                   fill
                   priority
                   sizes="(min-width: 1024px) 46vw, 100vw"
-                  className="!inset-auto !bottom-0 !left-0 !h-[175%] !w-full max-w-none object-cover object-bottom"
+                  className="hero-photo !inset-auto !bottom-0 !left-0 !h-[175%] !w-full max-w-none object-cover object-bottom"
                 />
               </div>
-              <div className="relative z-10 -mt-14 mx-3 rounded-[14px] border border-line bg-paper p-4 shadow-[0_16px_40px_rgba(16,44,38,0.08)] sm:absolute sm:bottom-5 sm:left-5 sm:right-auto sm:mx-0 sm:mt-0 sm:w-[19rem] sm:p-5">
+              <div className="hero-card relative z-10 -mt-14 mx-3 rounded-[14px] border border-line bg-paper p-4 shadow-[0_16px_40px_rgba(16,44,38,0.08)] sm:absolute sm:bottom-5 sm:left-5 sm:right-auto sm:mx-0 sm:mt-0 sm:w-[19rem] sm:p-5">
                 <p className="eyebrow text-muted">Project status</p>
                 <p className="mt-3 text-sm text-ink sm:text-[15px]">
                   Customer wants the project
@@ -72,14 +71,19 @@ export function Hero() {
                 </p>
                 <Link
                   href="/how-heas-work"
-                  className="mt-3 flex items-center justify-between border-t border-line pt-3 text-sm font-medium text-forest"
+                  className="group mt-3 flex items-center justify-between border-t border-line pt-3 text-sm font-medium text-forest"
                 >
                   Another option to explore
-                  <span aria-hidden>→</span>
+                  <span
+                    aria-hidden
+                    className="motion-safe:transition-transform motion-safe:duration-300 motion-safe:group-hover:translate-x-1"
+                  >
+                    →
+                  </span>
                 </Link>
               </div>
             </div>
-          </Reveal>
+          </div>
         </div>
       </Container>
     </section>

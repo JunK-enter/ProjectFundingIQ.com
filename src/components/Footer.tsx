@@ -12,7 +12,10 @@ export async function Footer() {
   const year = await currentYear();
 
   return (
-    <footer className="border-t border-white/10 bg-forest-deep text-cream">
+    <footer
+      style={{ viewTransitionName: "site-footer" }}
+      className="border-t border-white/10 bg-forest-deep text-cream"
+    >
       <Container className="py-14 md:py-16">
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr]">
           <div>
@@ -28,7 +31,7 @@ export async function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-cream/85 hover:text-cream"
+                    className="text-sm text-cream/85 transition-colors duration-300 hover:text-cream"
                   >
                     {link.label}
                   </Link>
@@ -44,7 +47,7 @@ export async function Footer() {
                   href={partnerUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-cream/85 hover:text-cream"
+                  className="text-sm text-cream/85 transition-colors duration-300 hover:text-cream"
                 >
                   Become a Partner
                   <span className="sr-only">
@@ -57,7 +60,7 @@ export async function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-cream/85 hover:text-cream"
+                    className="text-sm text-cream/85 transition-colors duration-300 hover:text-cream"
                   >
                     {link.label}
                   </Link>

@@ -31,7 +31,7 @@ export function LostProjects({
         <div className="mt-10 grid gap-4 lg:grid-cols-3">
           {lostProjects.map((project, index) => (
             <Reveal key={project.title} delay={index * 0.05}>
-              <article className="h-full overflow-hidden rounded-[14px] border border-line bg-paper">
+              <article className="h-full overflow-hidden rounded-[14px] border border-line bg-paper motion-safe:transition-[transform,box-shadow] motion-safe:duration-500 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-[0_18px_40px_rgba(16,44,38,0.08)]">
                 <div className="flex items-center justify-between border-b border-line bg-sage/80 px-5 py-3">
                   <p className="eyebrow text-muted">Estimate</p>
                   <p className="eyebrow text-clay">Open</p>

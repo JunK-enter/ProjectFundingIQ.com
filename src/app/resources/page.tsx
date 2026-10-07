@@ -53,7 +53,7 @@ export default function ResourcesPage() {
                     <li key={article.slug}>
                       <Link
                         href={`/resources/${article.slug}`}
-                        className="group grid gap-3 py-6 sm:grid-cols-[1fr_auto] sm:items-center"
+                        className="group grid gap-3 py-6 transition-colors duration-300 hover:text-forest sm:grid-cols-[1fr_auto] sm:items-center"
                       >
                         <span>
                           <span className="block font-serif text-2xl text-ink">
@@ -64,7 +64,7 @@ export default function ResourcesPage() {
                           </span>
                         </span>
                         <ArrowRight
-                          className="h-4 w-4 text-forest motion-safe:transition-transform motion-safe:group-hover:translate-x-0.5"
+                          className="h-4 w-4 text-forest motion-safe:transition-transform motion-safe:duration-300 motion-safe:group-hover:translate-x-1"
                           aria-hidden
                         />
                       </Link>

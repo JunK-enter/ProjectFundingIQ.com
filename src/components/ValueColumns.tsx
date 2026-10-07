@@ -1,5 +1,6 @@
 import { valuePoints } from "@/content/journey";
 import { Container } from "./Container";
+import { Reveal } from "./Reveal";
 import { SectionHeader } from "./SectionHeader";
 
 export function ValueColumns() {
@@ -9,8 +10,10 @@ export function ValueColumns() {
         <SectionHeader title="Another option for the funding conversation." />
         <ol className="mt-12 grid gap-10 md:grid-cols-3 md:gap-0">
           {valuePoints.map((point, index) => (
-            <li
+            <Reveal
+              as="li"
               key={point.number}
+              delay={index * 0.08}
               className={`md:px-8 ${
                 index === 0 ? "md:pl-0" : "md:border-l md:border-forest/15"
               } ${index === valuePoints.length - 1 ? "md:pr-0" : ""}`}
@@ -22,7 +25,7 @@ export function ValueColumns() {
                 {point.title}
               </h3>
               <p className="mt-3 leading-relaxed text-muted">{point.body}</p>
-            </li>
+            </Reveal>
           ))}
         </ol>
       </Container>

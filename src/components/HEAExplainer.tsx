@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { heaSteps } from "@/content/journey";
 import { Container } from "./Container";
-import { Reveal } from "./Reveal";
+import { Reveal, Stagger, StaggerItem } from "./Reveal";
 import { SectionHeader } from "./SectionHeader";
 
 export function HEAExplainer() {
@@ -20,15 +20,23 @@ export function HEAExplainer() {
             </SectionHeader>
             <Link
               href="/how-heas-work"
-              className="mt-8 inline-flex min-h-11 items-center gap-2 text-base font-medium text-forest"
+              className="group mt-8 inline-flex min-h-11 items-center gap-2 text-base font-medium text-forest"
             >
-              Understand HEAs <span aria-hidden>→</span>
+              Understand HEAs{" "}
+              <span
+                aria-hidden
+                className="motion-safe:transition-transform motion-safe:duration-300 motion-safe:group-hover:translate-x-1"
+              >
+                →
+              </span>
             </Link>
           </Reveal>
-          <Reveal className="lg:col-span-6 lg:col-start-7" delay={0.06}>
-            <ol>
+          <Stagger as="ol" className="lg:col-span-6 lg:col-start-7" stagger={0.08}>
               {heaSteps.map((step, index) => (
-                <li key={step.number} className="relative grid grid-cols-[auto_1fr] gap-4 pb-8 last:pb-0">
+                <StaggerItem
+                  key={step.number}
+                  className="relative grid grid-cols-[auto_1fr] gap-4 pb-8 last:pb-0"
+                >
                   {index < heaSteps.length - 1 ? (
                     <span
                       aria-hidden
@@ -42,10 +50,9 @@ export function HEAExplainer() {
                     <h3 className="font-serif text-xl text-ink">{step.title}</h3>
                     <p className="mt-1.5 text-muted leading-relaxed">{step.body}</p>
                   </div>
-                </li>
+                </StaggerItem>
               ))}
-            </ol>
-          </Reveal>
+          </Stagger>
         </div>
         <Reveal>
           <aside className="mt-12 border border-line bg-sage/70 p-6 sm:p-8 md:mt-16">

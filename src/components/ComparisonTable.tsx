@@ -4,6 +4,7 @@ import {
   type ComparisonColumnId,
 } from "@/content/comparison";
 import { Container } from "./Container";
+import { Reveal } from "./Reveal";
 import { SectionHeader } from "./SectionHeader";
 
 export function ComparisonTable({
@@ -19,10 +20,10 @@ export function ComparisonTable({
         ) : null}
         <div className={showHeader ? "mt-10 lg:hidden" : "lg:hidden"}>
           <div className="grid gap-4">
-            {comparisonColumns.map((column) => (
+            {comparisonColumns.map((column, index) => (
+              <Reveal key={column.id} delay={index * 0.06}>
               <article
-                key={column.id}
-                className="rounded-[14px] border border-line bg-cream p-5"
+                className="rounded-[14px] border border-line bg-cream p-5 motion-safe:transition-[transform,box-shadow] motion-safe:duration-500 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-[0_16px_36px_rgba(16,44,38,0.07)]"
               >
                 <h3 className="font-serif text-2xl text-ink">{column.label}</h3>
                 <p className="mt-1 text-sm text-muted">{column.detail}</p>
@@ -39,10 +40,11 @@ export function ComparisonTable({
                   ))}
                 </dl>
               </article>
+              </Reveal>
             ))}
           </div>
         </div>
-        <div className={`hidden lg:block ${showHeader ? "mt-10" : ""}`}>
+        <Reveal className={`hidden lg:block ${showHeader ? "mt-10" : ""}`}>
           <div className="overflow-x-auto">
             <table className="w-full min-w-[760px] border-collapse text-left">
               <caption className="sr-only">
@@ -90,7 +92,7 @@ export function ComparisonTable({
               </tbody>
             </table>
           </div>
-        </div>
+        </Reveal>
         <p className="mx-auto mt-12 max-w-2xl text-center font-serif text-2xl leading-snug text-balance text-ink sm:text-3xl">
           An HEA isn&apos;t automatically better. It&apos;s simply another option
           worth understanding.

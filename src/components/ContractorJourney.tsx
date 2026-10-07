@@ -1,6 +1,7 @@
 import { journeySteps } from "@/content/journey";
 import { Container } from "./Container";
 import { Button } from "./Button";
+import { Reveal } from "./Reveal";
 import { SectionHeader } from "./SectionHeader";
 
 export function ContractorJourney({
@@ -30,8 +31,13 @@ export function ContractorJourney({
             aria-hidden
             className="absolute left-[10%] right-[10%] top-5 hidden h-px bg-gold/40 lg:block"
           />
-          {journeySteps.map((step) => (
-            <li key={step.number} className="relative pl-12 lg:pl-0">
+          {journeySteps.map((step, index) => (
+            <Reveal
+              as="li"
+              key={step.number}
+              delay={index * 0.08}
+              className="relative pl-12 lg:pl-0"
+            >
               <span className="absolute left-0 top-0 z-10 flex h-8 w-8 items-center justify-center rounded-full border border-gold/50 bg-forest-deep font-serif text-xs text-gold lg:static lg:mb-5">
                 {step.number}
               </span>
@@ -41,7 +47,7 @@ export function ContractorJourney({
               <p className="mt-3 text-sm leading-relaxed text-cream/75">
                 {step.body}
               </p>
-            </li>
+            </Reveal>
           ))}
         </ol>
         {showCta ? (

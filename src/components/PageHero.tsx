@@ -36,7 +36,7 @@ export function PageHero({
                   alt={image.alt}
                   fill
                   sizes="(min-width: 1024px) 38vw, 100vw"
-                  className="object-cover"
+                  className="hero-photo object-cover"
                 />
               </div>
             </div>

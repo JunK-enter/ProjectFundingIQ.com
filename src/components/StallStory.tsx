@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { stallSteps } from "@/content/journey";
 import { Container } from "./Container";
-import { Reveal } from "./Reveal";
+import { Reveal, Stagger, StaggerItem } from "./Reveal";
 import { SectionHeader } from "./SectionHeader";
 
 export function StallStory() {
@@ -36,10 +36,10 @@ export function StallStory() {
           </Reveal>
         </div>
 
-        <Reveal className="mt-14 md:mt-16">
-          <ol className="md:hidden">
+        <div className="mt-14 md:mt-16">
+          <Stagger as="ol" className="md:hidden">
             {stallSteps.map((step, index) => (
-              <li key={step.label} className="relative flex gap-3 pb-3">
+              <StaggerItem key={step.label} className="relative flex gap-3 pb-3">
                 {index < stallSteps.length - 1 ? (
                   <span
                     aria-hidden
@@ -64,12 +64,16 @@ export function StallStory() {
                 >
                   {step.label}
                 </span>
-              </li>
+              </StaggerItem>
             ))}
-          </ol>
-          <ol className="hidden flex-wrap items-center gap-x-2 gap-y-3 md:flex">
+          </Stagger>
+          <Stagger
+            as="ol"
+            className="hidden flex-wrap items-center gap-x-2 gap-y-3 md:flex"
+            stagger={0.05}
+          >
             {stallSteps.map((step, index) => (
-              <li key={step.label} className="flex items-center gap-2">
+              <StaggerItem key={step.label} className="flex items-center gap-2">
                 <span
                   className={`rounded-[12px] px-3.5 py-2.5 text-sm ${
                     step.emphasis
@@ -82,10 +86,10 @@ export function StallStory() {
                 {index < stallSteps.length - 1 ? (
                   <ArrowRight className="h-4 w-4 text-muted" aria-hidden />
                 ) : null}
-              </li>
+              </StaggerItem>
             ))}
-          </ol>
-        </Reveal>
+          </Stagger>
+        </div>
 
         <Reveal>
           <p className="mt-12 max-w-2xl font-serif text-2xl leading-snug text-ink sm:text-3xl">

@@ -1,13 +1,14 @@
 import { partnerTransition, partnerUrl } from "@/content/site";
 import { Button } from "./Button";
 import { Container } from "./Container";
+import { Reveal } from "./Reveal";
 
 export function NeilSection() {
   return (
     <section id="ask-neil" className="py-20 md:py-28">
       <Container>
         <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-16">
-          <div className="lg:col-span-5">
+          <Reveal className="lg:col-span-5">
             <div className="relative mx-auto aspect-[4/5] max-w-sm overflow-hidden rounded-[14px] border border-line bg-sage">
               <div className="absolute inset-0 flex flex-col justify-between p-7">
                 <p className="eyebrow text-forest">Partner contact</p>
@@ -22,8 +23,8 @@ export function NeilSection() {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="lg:col-span-6 lg:col-start-7">
+          </Reveal>
+          <Reveal className="lg:col-span-6 lg:col-start-7" delay={0.08}>
             <h2 className="font-serif text-[2rem] leading-[1.15] text-balance text-ink sm:text-4xl">
               Questions before you join?
             </h2>
@@ -39,7 +40,7 @@ export function NeilSection() {
               </Button>
               <p className="mt-3 text-sm text-muted">{partnerTransition}</p>
             </div>
-          </div>
+          </Reveal>
         </div>
       </Container>
     </section>

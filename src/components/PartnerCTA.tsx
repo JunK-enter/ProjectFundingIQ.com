@@ -1,6 +1,7 @@
 import { partnerTransition, partnerUrl } from "@/content/site";
 import { Button } from "./Button";
 import { Container } from "./Container";
+import { Reveal } from "./Reveal";
 
 export function PartnerCTA({
   title = "Give your customers another funding option to explore.",
@@ -14,7 +15,7 @@ export function PartnerCTA({
   return (
     <section className="bg-forest-deep py-20 text-cream md:py-28">
       <Container>
-        <div className="mx-auto max-w-3xl text-center">
+        <Reveal className="mx-auto max-w-3xl text-center">
           <h2 className="font-serif text-[2.1rem] leading-[1.15] text-balance sm:text-5xl">
             {title}
           </h2>
@@ -33,7 +34,7 @@ export function PartnerCTA({
             </Button>
           </div>
           <p className="mt-4 text-sm text-cream/70">{partnerTransition}</p>
-        </div>
+        </Reveal>
       </Container>
     </section>
   );
