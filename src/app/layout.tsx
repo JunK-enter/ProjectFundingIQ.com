@@ -1,8 +1,10 @@
 import type { Metadata, Viewport } from "next";
 import { DM_Serif_Display, Inter } from "next/font/google";
 import { Footer } from "@/components/Footer";
+import { MotionLayer } from "@/components/MotionLayer";
 import { Navbar } from "@/components/Navbar";
 import { defaultDescription, defaultTitle, ogImage, siteUrl } from "@/lib/seo";
+import "lenis/dist/lenis.css";
 import "./globals.css";
 
 const sans = Inter({
@@ -59,7 +61,11 @@ const jsonLd = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${sans.variable} ${serif.variable} h-full`}>
+    <html
+      lang="en"
+      className={`${sans.variable} ${serif.variable} h-full`}
+      suppressHydrationWarning
+    >
       <body className="flex min-h-full flex-col bg-cream font-sans text-ink antialiased">
         <script
           type="application/ld+json"
@@ -73,6 +79,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           {children}
         </main>
         <Footer />
+        <MotionLayer />
       </body>
     </html>
   );

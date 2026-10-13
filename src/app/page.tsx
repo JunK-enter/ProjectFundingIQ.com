@@ -8,12 +8,14 @@ import { PartnerCTA } from "@/components/PartnerCTA";
 import { ProjectGrid } from "@/components/ProjectGrid";
 import { ResourceGrid } from "@/components/ResourceGrid";
 import { StallStory } from "@/components/StallStory";
+import { TradeMarquee } from "@/components/TradeMarquee";
 import { ValueColumns } from "@/components/ValueColumns";
 
 export default function HomePage() {
   return (
     <>
       <Hero />
+      <TradeMarquee />
       <StallStory />
       <ProjectGrid />
       <HEAExplainer />

@@ -5,6 +5,7 @@ import { Container } from "./Container";
 import { ProjectCard } from "./ProjectCard";
 import { Reveal } from "./Reveal";
 import { SectionHeader } from "./SectionHeader";
+import { TiltCard } from "./velora/tilt-card";
 
 export function ProjectGrid({
   id = "project-types",
@@ -27,14 +28,22 @@ export function ProjectGrid({
         <SectionHeader eyebrow={eyebrow} title={title}>
           {intro}
         </SectionHeader>
-        <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-12">
           {projectCategories.map((project, index) => (
             <Reveal
               key={project.title}
               delay={Math.min(index * 0.04, 0.2)}
-              className={index < 2 ? "sm:col-span-2" : undefined}
+              className={
+                index < 2 ? "sm:col-span-2 lg:col-span-6" : "lg:col-span-4"
+              }
             >
-              <ProjectCard project={project} featured={index < 2} />
+              <TiltCard maxTilt={index < 2 ? 3 : 5} className="h-full">
+                <ProjectCard
+                  project={project}
+                  number={index + 1}
+                  featured={index < 2}
+                />
+              </TiltCard>
             </Reveal>
           ))}
         </div>

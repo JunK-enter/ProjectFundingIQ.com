@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { ArticleBody } from "@/components/ArticleBody";
 import { Container } from "@/components/Container";
 import { PartnerCTA } from "@/components/PartnerCTA";
+import { UturnLink } from "@/components/UturnLink";
 import { articles, getArticle } from "@/content/resources";
 import { pageMetadata } from "@/lib/seo";
 
@@ -49,6 +50,9 @@ export default async function ArticlePage({
     <>
       <article className="pb-16 pt-8 md:pt-14">
         <Container>
+          <UturnLink href="/resources" variant="text" className="-ml-0.5 mb-5">
+            All resources
+          </UturnLink>
           <p className="eyebrow text-forest">{article.category}</p>
           <h1 className="mt-3 max-w-3xl font-serif text-[2.15rem] leading-[1.15] text-balance text-ink sm:text-5xl">
             {article.title}

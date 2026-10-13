@@ -3,6 +3,7 @@ import { stallSteps } from "@/content/journey";
 import { Container } from "./Container";
 import { Reveal, Stagger, StaggerItem } from "./Reveal";
 import { SectionHeader } from "./SectionHeader";
+import { TextReveal } from "./velora/text-reveal";
 
 export function StallStory() {
   return (
@@ -91,11 +92,12 @@ export function StallStory() {
           </Stagger>
         </div>
 
-        <Reveal>
-          <p className="mt-12 max-w-2xl font-serif text-2xl leading-snug text-ink sm:text-3xl">
-            That doesn&apos;t always have to be the end of the conversation.
-          </p>
-        </Reveal>
+        <TextReveal
+          as="p"
+          text="That doesn’t always have to be the end of the conversation."
+          stagger={0.06}
+          className="mt-12 max-w-2xl font-serif text-2xl leading-snug text-ink sm:text-3xl"
+        />
       </Container>
     </section>
   );

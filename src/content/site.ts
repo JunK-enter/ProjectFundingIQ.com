@@ -31,6 +31,19 @@ export const footerLegal = [
   { href: "/terms", label: "Terms" },
 ] as const;
 
+export const marqueeTrades = [
+  "Solar & battery",
+  "Roofing",
+  "ADUs & additions",
+  "Kitchen & bath",
+  "HVAC",
+  "Electrical",
+  "Windows & doors",
+  "Remodeling",
+  "Outdoor improvements",
+  "General contracting",
+] as const;
+
 export const heroTrades = [
   "Solar",
   "Roofing",

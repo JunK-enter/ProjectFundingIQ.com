@@ -110,6 +110,7 @@ export function Navbar() {
         {open ? (
           <motion.div
             id="mobile-nav"
+            data-lenis-prevent
             className="fixed inset-x-0 top-16 bottom-0 z-40 overflow-y-auto bg-cream lg:hidden"
             initial={reduce ? false : { opacity: 0 }}
             animate={{ opacity: 1 }}

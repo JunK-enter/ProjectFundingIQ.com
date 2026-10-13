@@ -1,9 +1,10 @@
 import type { ReactNode } from "react";
 import { lostProjects } from "@/content/journey";
-import { Button } from "./Button";
 import { Container } from "./Container";
 import { Reveal } from "./Reveal";
 import { SectionHeader } from "./SectionHeader";
+import { UturnLink } from "./UturnLink";
+import { NumberTicker } from "./velora/number-ticker";
 
 export function LostProjects({
   id = "pipeline",
@@ -37,7 +38,14 @@ export function LostProjects({
                   <p className="eyebrow text-clay">Open</p>
                 </div>
                 <div className="px-5 py-6">
-                  <p className="font-serif text-4xl text-ink">{project.amount}</p>
+                  <p className="font-serif text-4xl text-ink">
+                    <NumberTicker
+                      value={Number(project.amount.replace(/\D/g, ""))}
+                      startValue={0}
+                      prefix="$"
+                      delay={0.1 + index * 0.08}
+                    />
+                  </p>
                   <h3 className="mt-4 eyebrow text-forest">{project.title}</h3>
                   <p className="mt-4 text-ink">{project.note}</p>
                   <p className="mt-1 font-medium text-clay">{project.status}</p>
@@ -61,9 +69,7 @@ export function LostProjects({
           </p>
           {showCta ? (
             <div className="mt-6">
-              <Button href={ctaHref} variant="secondary">
-                {ctaLabel}
-              </Button>
+              <UturnLink href={ctaHref}>{ctaLabel}</UturnLink>
             </div>
           ) : null}
         </div>
