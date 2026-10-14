@@ -23,7 +23,7 @@ export function ProjectGrid({
   intro?: string;
 }) {
   return (
-    <section id={id} className="bg-paper py-20 md:py-28">
+    <section id={id} className="bg-surface py-20 md:py-28">
       <Container>
         <SectionHeader eyebrow={eyebrow} title={title}>
           {intro}

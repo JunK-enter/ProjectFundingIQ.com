@@ -53,14 +53,14 @@ export default async function ArticlePage({
           <UturnLink href="/resources" variant="text" className="-ml-0.5 mb-5">
             All resources
           </UturnLink>
-          <p className="eyebrow text-forest">{article.category}</p>
+          <p className="eyebrow text-blue">{article.category}</p>
           <h1 className="mt-3 max-w-3xl font-serif text-[2.15rem] leading-[1.15] text-balance text-ink sm:text-5xl">
             {article.title}
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted">
             {article.excerpt}
           </p>
-          <p className="mt-6 max-w-3xl border border-line bg-sage/60 px-4 py-3 text-sm leading-relaxed text-ink">
+          <p className="mt-6 max-w-3xl border border-line bg-tint/60 px-4 py-3 text-sm leading-relaxed text-ink">
             Educational only. This article does not describe a specific offer
             and is not a promise of eligibility, pricing, or funding.
           </p>
@@ -69,7 +69,7 @@ export default async function ArticlePage({
           </div>
         </Container>
       </article>
-      <section className="border-t border-line bg-paper py-14">
+      <section className="border-t border-line bg-surface py-14">
         <Container>
           <h2 className="font-serif text-2xl text-ink">Keep reading</h2>
           <ul className="mt-5 grid gap-3 md:grid-cols-3">
@@ -77,9 +77,9 @@ export default async function ArticlePage({
               <li key={item.slug}>
                 <Link
                   href={`/resources/${item.slug}`}
-                  className="block h-full rounded-[14px] border border-line bg-cream p-5 hover:bg-sage/50"
+                  className="block h-full rounded-[14px] border border-line bg-white p-5 hover:bg-tint/50"
                 >
-                  <p className="eyebrow text-forest">{item.category}</p>
+                  <p className="eyebrow text-blue">{item.category}</p>
                   <p className="mt-3 font-serif text-xl text-ink">{item.title}</p>
                 </Link>
               </li>

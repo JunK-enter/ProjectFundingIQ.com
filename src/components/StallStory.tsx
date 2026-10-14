@@ -29,7 +29,7 @@ export function StallStory() {
               <li>Planned the project.</li>
             </ul>
             <p className="mt-6 text-muted">Then the customer says:</p>
-            <blockquote className="mt-3 border-l-2 border-gold pl-5">
+            <blockquote className="mt-3 border-l-2 border-sky pl-5">
               <p className="font-serif text-2xl italic leading-snug text-ink sm:text-3xl">
                 “I don&apos;t want another monthly payment.”
               </p>
@@ -50,8 +50,8 @@ export function StallStory() {
                 <span
                   className={`relative z-10 mt-1 h-8 w-8 shrink-0 rounded-full text-center text-xs leading-8 ${
                     step.emphasis
-                      ? "bg-forest text-cream"
-                      : "border border-line bg-paper text-forest"
+                      ? "bg-blue text-white"
+                      : "border border-line bg-surface text-blue"
                   }`}
                 >
                   {index + 1}
@@ -59,8 +59,8 @@ export function StallStory() {
                 <span
                   className={`flex min-h-11 flex-1 items-center rounded-[12px] px-3 text-sm ${
                     step.emphasis
-                      ? "bg-forest text-cream"
-                      : "border border-line bg-paper text-ink"
+                      ? "bg-blue text-white"
+                      : "border border-line bg-surface text-ink"
                   }`}
                 >
                   {step.label}
@@ -78,8 +78,8 @@ export function StallStory() {
                 <span
                   className={`rounded-[12px] px-3.5 py-2.5 text-sm ${
                     step.emphasis
-                      ? "bg-forest text-cream"
-                      : "border border-line bg-paper text-ink"
+                      ? "bg-blue text-white"
+                      : "border border-line bg-surface text-ink"
                   }`}
                 >
                   {step.label}

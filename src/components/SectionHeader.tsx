@@ -22,13 +22,13 @@ export function SectionHeader({
   return (
     <div className={`max-w-3xl ${className}`} id={id}>
       {eyebrow ? (
-        <p className={`eyebrow ${tone === "dark" ? "text-gold" : "text-forest"}`}>
+        <p className={`eyebrow ${tone === "dark" ? "text-sky" : "text-blue"}`}>
           {eyebrow}
         </p>
       ) : null}
       <Heading
         className={`mt-3 font-serif text-[2rem] leading-[1.15] text-balance sm:text-4xl lg:text-[2.75rem] ${
-          tone === "dark" ? "text-cream" : "text-ink"
+          tone === "dark" ? "text-white" : "text-ink"
         }`}
       >
         {title}
@@ -36,7 +36,7 @@ export function SectionHeader({
       {children ? (
         <div
           className={`mt-5 max-w-2xl text-base leading-relaxed sm:text-lg ${
-            tone === "dark" ? "text-cream/75" : "text-muted"
+            tone === "dark" ? "text-white/75" : "text-muted"
           }`}
         >
           {children}

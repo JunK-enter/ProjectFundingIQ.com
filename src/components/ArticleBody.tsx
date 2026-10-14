@@ -19,7 +19,7 @@ export function ArticleBody({ blocks }: { blocks: ArticleBlock[] }) {
             <ul key={index} className="mt-4 space-y-2 text-muted">
               {block.items.map((item) => (
                 <li key={item} className="flex gap-3 leading-relaxed">
-                  <span aria-hidden className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gold" />
+                  <span aria-hidden className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sky" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -30,7 +30,7 @@ export function ArticleBody({ blocks }: { blocks: ArticleBlock[] }) {
           return (
             <aside
               key={index}
-              className="mt-8 border border-line bg-sage/70 p-5 sm:p-6"
+              className="mt-8 border border-line bg-tint/70 p-5 sm:p-6"
             >
               <h2 className="font-serif text-xl text-ink">{block.title}</h2>
               <p className="mt-2 leading-relaxed text-muted">{block.text}</p>

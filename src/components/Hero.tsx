@@ -41,17 +41,17 @@ export function Hero() {
       <Container>
         <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-12">
           <div className="lg:col-span-7">
-            <p className="eyebrow inline-flex items-center gap-2.5 rounded-full !text-[0.58rem] !tracking-[0.06em] min-[400px]:!text-[0.72rem] min-[400px]:!tracking-[0.16em] border border-forest/15 bg-paper/70 py-1.5 pl-2.5 pr-3.5 text-forest">
+            <p className="eyebrow inline-flex items-center gap-2.5 rounded-full !text-[0.58rem] !tracking-[0.06em] min-[400px]:!text-[0.72rem] min-[400px]:!tracking-[0.16em] border border-blue/15 bg-surface/70 py-1.5 pl-2.5 pr-3.5 text-blue">
               <span aria-hidden className="relative flex size-2">
-                <span className="absolute inline-flex size-full rounded-full bg-gold opacity-70 motion-safe:animate-ping" />
-                <span className="relative inline-flex size-2 rounded-full bg-gold" />
+                <span className="absolute inline-flex size-full rounded-full bg-sky opacity-70 motion-safe:animate-ping" />
+                <span className="relative inline-flex size-2 rounded-full bg-sky" />
               </span>
               Funding conversations for home improvement
             </p>
             <h1 className="mt-6 font-serif text-[2.3rem] min-[400px]:text-[2.55rem] leading-[1.04] tracking-[-0.015em] text-ink sm:text-[3.6rem] lg:text-[3.55rem] xl:text-[3.9rem]">
               <HeroLine index={0}>{words("Your customer")}</HeroLine>
               <HeroLine index={1}>{words("wants the project.")}</HeroLine>
-              <HeroLine index={2} className="italic text-forest">
+              <HeroLine index={2} className="italic text-blue">
                 {words("Another")}{" "}
                 <span className="relative inline-block whitespace-nowrap">
                   {words("monthly payment")}
@@ -59,7 +59,7 @@ export function Hero() {
                     aria-hidden
                     viewBox="0 0 300 20"
                     preserveAspectRatio="none"
-                    className="hero-squiggle pointer-events-none absolute -bottom-[0.02em] left-0 h-[0.26em] w-full text-gold"
+                    className="hero-squiggle pointer-events-none absolute -bottom-[0.02em] left-0 h-[0.26em] w-full text-sky"
                   >
                     <path
                       d="M4 13 C 45 5, 75 17, 115 10 S 185 4, 225 11 S 278 9, 296 6"
@@ -99,7 +99,7 @@ export function Hero() {
               {heroTrades.map((trade) => (
                 <li
                   key={trade}
-                  className="text-sm tracking-tight text-forest before:mr-3 before:text-line before:content-['/'] first:before:mr-0 first:before:content-none"
+                  className="text-sm tracking-tight text-blue before:mr-3 before:text-line before:content-['/'] first:before:mr-0 first:before:content-none"
                 >
                   {trade}
                 </li>
@@ -125,7 +125,7 @@ export function Hero() {
                   label="Become a Partner (opens the HomeWealthIQ partner experience)"
                 />
               </div>
-              <div className="hero-card relative z-10 -mt-14 mx-3 rounded-[14px] border border-line bg-paper p-4 shadow-[0_16px_40px_rgba(16,44,38,0.08)] sm:absolute sm:bottom-5 sm:left-5 sm:right-auto sm:mx-0 sm:mt-0 sm:w-[19rem] sm:p-5">
+              <div className="hero-card relative z-10 -mt-14 mx-3 rounded-[14px] border border-line bg-white p-4 shadow-[0_16px_40px_rgba(15,30,70,0.08)] sm:absolute sm:bottom-5 sm:left-5 sm:right-auto sm:mx-0 sm:mt-0 sm:w-[19rem] sm:p-5">
                 <p className="eyebrow text-muted">Project status</p>
                 <p className="mt-3 text-sm text-ink sm:text-[15px]">
                   Customer wants the project
@@ -135,7 +135,7 @@ export function Hero() {
                 </p>
                 <Link
                   href="/how-heas-work"
-                  className="group mt-3 flex min-h-11 items-center justify-between border-t border-line pt-2 text-sm font-medium text-forest"
+                  className="group mt-3 flex min-h-11 items-center justify-between border-t border-line pt-2 text-sm font-medium text-blue"
                 >
                   Another option to explore
                   <span

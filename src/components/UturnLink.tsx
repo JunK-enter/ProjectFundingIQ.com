@@ -9,8 +9,8 @@ import {
 
 const variants = {
   button:
-    "min-h-12 rounded-[10px] border border-forest/25 px-5 text-[15px] font-medium tracking-tight text-forest transition-[background-color,border-color,transform,box-shadow] duration-300 hover:border-forest hover:bg-paper motion-safe:hover:-translate-y-px motion-safe:hover:shadow-[0_10px_24px_rgba(16,44,38,0.12)]",
-  text: "min-h-11 text-sm font-medium text-forest transition-colors duration-300 hover:text-forest-deep",
+    "min-h-12 rounded-[10px] border border-blue/25 px-5 text-[15px] font-medium tracking-tight text-blue transition-[background-color,border-color,transform,box-shadow] duration-300 hover:border-blue hover:bg-surface motion-safe:hover:-translate-y-px motion-safe:hover:shadow-[0_10px_24px_rgba(15,30,70,0.12)]",
+  text: "min-h-11 text-sm font-medium text-blue transition-colors duration-300 hover:text-navy",
 };
 
 export function UturnLink({

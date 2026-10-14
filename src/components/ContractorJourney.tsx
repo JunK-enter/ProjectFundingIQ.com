@@ -9,7 +9,7 @@ export function ContractorJourney({
   showCta?: boolean;
 }) {
   return (
-    <section id="contractor-path" className="bg-forest-deep py-20 text-cream md:py-28">
+    <section id="contractor-path" className="bg-navy py-20 text-white md:py-28">
       <Container>
         <SectionHeader
           tone="dark"

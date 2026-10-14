@@ -32,8 +32,8 @@ export function LostProjects({
         <div className="mt-10 grid gap-4 lg:grid-cols-3">
           {lostProjects.map((project, index) => (
             <Reveal key={project.title} delay={index * 0.05}>
-              <article className="h-full overflow-hidden rounded-[14px] border border-line bg-paper motion-safe:transition-[transform,box-shadow] motion-safe:duration-500 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-[0_18px_40px_rgba(16,44,38,0.08)]">
-                <div className="flex items-center justify-between border-b border-line bg-sage/80 px-5 py-3">
+              <article className="h-full overflow-hidden rounded-[14px] border border-line bg-surface motion-safe:transition-[transform,box-shadow] motion-safe:duration-500 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-[0_18px_40px_rgba(15,30,70,0.08)]">
+                <div className="flex items-center justify-between border-b border-line bg-tint/80 px-5 py-3">
                   <p className="eyebrow text-muted">Estimate</p>
                   <p className="eyebrow text-clay">Open</p>
                 </div>
@@ -46,7 +46,7 @@ export function LostProjects({
                       delay={0.1 + index * 0.08}
                     />
                   </p>
-                  <h3 className="mt-4 eyebrow text-forest">{project.title}</h3>
+                  <h3 className="mt-4 eyebrow text-blue">{project.title}</h3>
                   <p className="mt-4 text-ink">{project.note}</p>
                   <p className="mt-1 font-medium text-clay">{project.status}</p>
                 </div>

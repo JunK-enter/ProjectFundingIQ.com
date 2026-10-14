@@ -44,13 +44,13 @@ export default function HowHeasWorkPage() {
         </p>
       </PageHero>
 
-      <nav aria-label="On this page" className="border-y border-line bg-paper">
+      <nav aria-label="On this page" className="border-y border-line bg-surface">
         <Container className="flex gap-2 overflow-x-auto py-3">
           {contents.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className="shrink-0 rounded-full border border-line px-3 py-2 text-sm text-ink hover:bg-sage"
+              className="shrink-0 rounded-full border border-line px-3 py-2 text-sm text-ink hover:bg-tint"
             >
               {item.label}
             </a>
@@ -78,7 +78,7 @@ export default function HowHeasWorkPage() {
         </Container>
       </section>
 
-      <section id="how-it-works" className="bg-paper py-16 md:py-20">
+      <section id="how-it-works" className="bg-surface py-16 md:py-20">
         <Container>
           <h2 className="max-w-2xl font-serif text-3xl text-ink sm:text-4xl">
             How an HEA works
@@ -89,8 +89,8 @@ export default function HowHeasWorkPage() {
           </p>
           <ol className="mt-10 grid gap-4 md:grid-cols-2">
             {heaSteps.map((step) => (
-              <li key={step.number} className="rounded-[14px] border border-line bg-cream p-5">
-                <p className="font-serif text-sm text-gold">{step.number}</p>
+              <li key={step.number} className="rounded-[14px] border border-line bg-white p-5">
+                <p className="font-serif text-sm text-sky">{step.number}</p>
                 <h3 className="mt-2 font-serif text-2xl text-ink">{step.title}</h3>
                 <p className="mt-2 leading-relaxed text-muted">{step.body}</p>
               </li>
@@ -158,7 +158,7 @@ export default function HowHeasWorkPage() {
         </Container>
       </section>
 
-      <section id="not-free" className="bg-sage py-16 md:py-20">
+      <section id="not-free" className="bg-tint py-16 md:py-20">
         <Container>
           <h2 className="max-w-3xl font-serif text-3xl text-ink sm:text-4xl">
             No monthly loan payment ≠ free money
@@ -203,13 +203,13 @@ export default function HowHeasWorkPage() {
         </Container>
       </section>
 
-      <section id="obligations" className="bg-paper py-16 md:py-20">
+      <section id="obligations" className="bg-surface py-16 md:py-20">
         <Container>
           <h2 className="max-w-2xl font-serif text-3xl text-ink sm:text-4xl">
             Fees, liens, selling, and refinancing
           </h2>
           <div className="mt-10 grid gap-4 md:grid-cols-2">
-            <article className="rounded-[14px] border border-line bg-cream p-6">
+            <article className="rounded-[14px] border border-line bg-white p-6">
               <h3 className="font-serif text-2xl text-ink">Potential fees</h3>
               <p className="mt-3 leading-relaxed text-muted">
                 A provider may charge origination, processing, valuation, or
@@ -218,7 +218,7 @@ export default function HowHeasWorkPage() {
                 Do not quote a fee you have not seen in that provider’s materials.
               </p>
             </article>
-            <article className="rounded-[14px] border border-line bg-cream p-6">
+            <article className="rounded-[14px] border border-line bg-white p-6">
               <h3 className="font-serif text-2xl text-ink">Lien considerations</h3>
               <p className="mt-3 leading-relaxed text-muted">
                 Providers commonly secure the agreement with a lien or a similar
@@ -227,7 +227,7 @@ export default function HowHeasWorkPage() {
                 what position, and what is required to release it.
               </p>
             </article>
-            <article className="rounded-[14px] border border-line bg-cream p-6">
+            <article className="rounded-[14px] border border-line bg-white p-6">
               <h3 className="font-serif text-2xl text-ink">Selling the home</h3>
               <p className="mt-3 leading-relaxed text-muted">
                 A sale is often a settlement event. The agreement may need to
@@ -236,7 +236,7 @@ export default function HowHeasWorkPage() {
                 sale is handled before they sign.
               </p>
             </article>
-            <article className="rounded-[14px] border border-line bg-cream p-6">
+            <article className="rounded-[14px] border border-line bg-white p-6">
               <h3 className="font-serif text-2xl text-ink">Refinancing</h3>
               <p className="mt-3 leading-relaxed text-muted">
                 A refinance can require the provider’s consent, a subordination,
@@ -263,14 +263,14 @@ export default function HowHeasWorkPage() {
             <FaqList items={homeownerFaqs} idPrefix="homeowner" />
           </div>
           <p className="mt-6 text-sm">
-            <Link href="/resources/questions-homeowners-ask" className="inline-flex min-h-11 items-center font-medium text-forest">
+            <Link href="/resources/questions-homeowners-ask" className="inline-flex min-h-11 items-center font-medium text-blue">
               Read the longer question guide →
             </Link>
           </p>
         </Container>
       </section>
 
-      <section id="roles" className="bg-paper py-16 md:py-20">
+      <section id="roles" className="bg-surface py-16 md:py-20">
         <Container>
           <h2 className="max-w-2xl font-serif text-3xl text-ink sm:text-4xl">
             Contractor’s role vs provider’s role

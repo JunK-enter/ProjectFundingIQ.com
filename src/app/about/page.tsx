@@ -74,7 +74,7 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      <section className="bg-paper py-16 md:py-20">
+      <section className="bg-surface py-16 md:py-20">
         <Container>
           <h2 className="font-serif text-3xl text-ink sm:text-4xl">Who we serve</h2>
           <p className="mt-4 max-w-2xl text-lg text-muted">
@@ -84,7 +84,7 @@ export default function AboutPage() {
           </p>
           <ul className="mt-8 grid gap-4 sm:grid-cols-2">
             {futureAudiencePages.map((audience) => (
-              <li key={audience.slug} className="rounded-[14px] border border-line bg-cream p-5">
+              <li key={audience.slug} className="rounded-[14px] border border-line bg-white p-5">
                 <h3 className="font-serif text-xl text-ink">{audience.audience}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted">{audience.summary}</p>
               </li>
@@ -95,23 +95,23 @@ export default function AboutPage() {
 
       <section className="py-16 md:py-20">
         <Container className="grid gap-6 md:grid-cols-2">
-          <article className="rounded-[14px] border border-line bg-paper p-6 sm:p-8">
+          <article className="rounded-[14px] border border-line bg-surface p-6 sm:p-8">
             <h2 className="font-serif text-2xl text-ink">What we do</h2>
             <ul className="mt-5 space-y-3">
               {weDo.map((item) => (
                 <li key={item} className="flex gap-3 text-sm leading-relaxed text-muted">
-                  <span aria-hidden className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-forest" />
+                  <span aria-hidden className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-blue" />
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
           </article>
-          <article className="rounded-[14px] bg-forest p-6 text-cream sm:p-8">
+          <article className="rounded-[14px] bg-blue p-6 text-white sm:p-8">
             <h2 className="font-serif text-2xl">What we don’t do</h2>
             <ul className="mt-5 space-y-3">
               {weDont.map((item) => (
-                <li key={item} className="flex gap-3 text-sm leading-relaxed text-cream/80">
-                  <span aria-hidden className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gold" />
+                <li key={item} className="flex gap-3 text-sm leading-relaxed text-white/80">
+                  <span aria-hidden className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sky" />
                   <span>{item}</span>
                 </li>
               ))}
@@ -120,7 +120,7 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      <section className="bg-sage py-16 md:py-20">
+      <section className="bg-tint py-16 md:py-20">
         <Container className="max-w-3xl">
           <h2 className="font-serif text-3xl text-ink sm:text-4xl">
             The HomeWealthIQ relationship

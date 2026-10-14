@@ -22,7 +22,7 @@ const serif = DM_Serif_Display({
 });
 
 export const viewport: Viewport = {
-  themeColor: "#F6F2E8",
+  themeColor: "#FFFFFF",
 };
 
 export const metadata: Metadata = {
@@ -66,7 +66,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${sans.variable} ${serif.variable} h-full`}
       suppressHydrationWarning
     >
-      <body className="flex min-h-full flex-col bg-cream font-sans text-ink antialiased">
+      <body className="flex min-h-full flex-col bg-white font-sans text-ink antialiased">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

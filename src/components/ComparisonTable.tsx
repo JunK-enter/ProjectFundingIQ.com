@@ -13,7 +13,7 @@ export function ComparisonTable({
   showHeader?: boolean;
 }) {
   return (
-    <section id="comparison" className="bg-paper py-20 md:py-28">
+    <section id="comparison" className="bg-surface py-20 md:py-28">
       <Container>
         {showHeader ? (
           <SectionHeader title="Different tools solve different problems." />
@@ -23,7 +23,7 @@ export function ComparisonTable({
             {comparisonColumns.map((column, index) => (
               <Reveal key={column.id} delay={index * 0.06}>
               <article
-                className="rounded-[14px] border border-line bg-cream p-5 motion-safe:transition-[transform,box-shadow] motion-safe:duration-500 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-[0_16px_36px_rgba(16,44,38,0.07)]"
+                className="rounded-[14px] border border-line bg-white p-5 motion-safe:transition-[transform,box-shadow] motion-safe:duration-500 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-[0_16px_36px_rgba(15,30,70,0.07)]"
               >
                 <h3 className="font-serif text-2xl text-ink">{column.label}</h3>
                 <p className="mt-1 text-sm text-muted">{column.detail}</p>

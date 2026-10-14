@@ -20,7 +20,7 @@ export function HEAExplainer() {
             </SectionHeader>
             <Link
               href="/how-heas-work"
-              className="group mt-8 inline-flex min-h-11 items-center gap-2 text-base font-medium text-forest"
+              className="group mt-8 inline-flex min-h-11 items-center gap-2 text-base font-medium text-blue"
             >
               Understand HEAs{" "}
               <span
@@ -43,7 +43,7 @@ export function HEAExplainer() {
                       className="absolute bottom-0 left-5 top-11 w-px bg-line"
                     />
                   ) : null}
-                  <span className="relative z-10 flex h-10 w-10 items-center justify-center rounded-full bg-sage font-serif text-sm text-forest">
+                  <span className="relative z-10 flex h-10 w-10 items-center justify-center rounded-full bg-tint font-serif text-sm text-blue">
                     {step.number}
                   </span>
                   <div className="pt-1">
@@ -55,7 +55,7 @@ export function HEAExplainer() {
           </Stagger>
         </div>
         <Reveal>
-          <aside className="mt-12 border border-line bg-sage/70 p-6 sm:p-8 md:mt-16">
+          <aside className="mt-12 border border-line bg-tint/70 p-6 sm:p-8 md:mt-16">
             <h3 className="font-serif text-2xl text-ink sm:text-3xl">
               No monthly payment does not mean free funding.
             </h3>

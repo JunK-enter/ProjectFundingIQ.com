@@ -70,7 +70,7 @@ export function RotatingBadge({
         onPointerLeave={() => speed.set(14)}
         onFocus={() => speed.set(70)}
         onBlur={() => speed.set(14)}
-        className="group relative grid size-24 place-items-center rounded-full bg-paper/95 text-forest shadow-[0_14px_34px_rgba(16,44,38,0.14)] backdrop-blur-sm transition-colors duration-300 hover:bg-forest hover:text-cream focus-visible:outline-offset-4 sm:size-28"
+        className="group relative grid size-24 place-items-center rounded-full bg-white/95 text-blue shadow-[0_14px_34px_rgba(15,30,70,0.14)] backdrop-blur-sm transition-colors duration-300 hover:bg-blue hover:text-white focus-visible:outline-offset-4 sm:size-28"
       >
         <motion.svg
           aria-hidden

@@ -18,7 +18,7 @@ export function PageHero({
       <Container>
         <div className={image ? "grid items-end gap-8 lg:grid-cols-12 lg:gap-12" : ""}>
           <div className={image ? "lg:col-span-7" : "max-w-3xl"}>
-            {eyebrow ? <p className="eyebrow text-forest">{eyebrow}</p> : null}
+            {eyebrow ? <p className="eyebrow text-blue">{eyebrow}</p> : null}
             <h1 className="mt-3 font-serif text-[2.15rem] leading-[1.14] text-balance text-ink sm:text-5xl">
               {title}
             </h1>

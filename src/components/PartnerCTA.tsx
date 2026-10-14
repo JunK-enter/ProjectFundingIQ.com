@@ -16,16 +16,16 @@ export function PartnerCTA({
   button?: string;
 }) {
   return (
-    <section className="overflow-hidden bg-forest-deep pb-20 pt-10 text-cream md:pb-28 md:pt-14">
+    <section className="overflow-hidden bg-navy pb-20 pt-10 text-white md:pb-28 md:pt-14">
       <ScrollVelocity
         baseVelocity={2.5}
-        className="mb-12 border-y border-cream/10 py-4 md:mb-16 md:py-5"
+        className="mb-12 border-y border-white/10 py-4 md:mb-16 md:py-5"
       >
-        <span className="inline-flex items-center gap-8 font-serif text-[2.6rem] leading-none text-cream/25 italic sm:text-6xl md:text-7xl">
+        <span className="inline-flex items-center gap-8 font-serif text-[2.6rem] leading-none text-white/25 italic sm:text-6xl md:text-7xl">
           Another option to explore
-          <span aria-hidden className="size-2.5 rotate-45 bg-gold/70 md:size-3" />
+          <span aria-hidden className="size-2.5 rotate-45 bg-sky/70 md:size-3" />
           Keep the project moving
-          <span aria-hidden className="size-2.5 rotate-45 bg-gold/70 md:size-3" />
+          <span aria-hidden className="size-2.5 rotate-45 bg-sky/70 md:size-3" />
         </span>
       </ScrollVelocity>
       <Container>
@@ -36,7 +36,7 @@ export function PartnerCTA({
             className="font-serif text-[2.1rem] leading-[1.15] text-balance sm:text-5xl"
           />
           <Reveal delay={0.15}>
-            <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-cream/75">
+            <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-white/75">
               {body}
             </p>
             <div className="mt-8">
@@ -52,7 +52,7 @@ export function PartnerCTA({
                 </Button>
               </Magnetic>
             </div>
-            <p className="mt-4 text-sm text-cream/70">{partnerTransition}</p>
+            <p className="mt-4 text-sm text-white/70">{partnerTransition}</p>
           </Reveal>
         </div>
       </Container>

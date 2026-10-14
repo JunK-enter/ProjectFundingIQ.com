@@ -49,8 +49,8 @@ export function Navbar() {
         style={{ viewTransitionName: "site-header" }}
         className={`sticky top-0 z-50 border-b transition-[background-color,border-color,box-shadow] duration-500 ${
           solid
-            ? "border-line bg-paper/90 backdrop-blur-md"
-            : "border-transparent bg-cream/80"
+            ? "border-line bg-surface/90 backdrop-blur-md"
+            : "border-transparent bg-white/80"
         }`}
       >
         <Container>
@@ -68,13 +68,13 @@ export function Navbar() {
                     href={link.href}
                     aria-current={active ? "page" : undefined}
                     className={`group relative text-sm tracking-tight transition-colors duration-300 ${
-                      active ? "text-forest" : "text-ink/80 hover:text-forest"
+                      active ? "text-blue" : "text-ink/80 hover:text-blue"
                     }`}
                   >
                     {link.label}
                     <span
                       aria-hidden
-                      className={`absolute -bottom-1.5 left-0 h-px bg-forest motion-safe:transition-transform motion-safe:duration-300 motion-safe:ease-out ${
+                      className={`absolute -bottom-1.5 left-0 h-px bg-blue motion-safe:transition-transform motion-safe:duration-300 motion-safe:ease-out ${
                         active
                           ? "w-full scale-x-100"
                           : "w-full origin-left scale-x-0 group-hover:scale-x-100"
@@ -94,7 +94,7 @@ export function Navbar() {
               </Button>
               <button
                 type="button"
-                className="inline-flex h-11 w-11 items-center justify-center rounded-[10px] text-forest lg:hidden"
+                className="inline-flex h-11 w-11 items-center justify-center rounded-[10px] text-blue lg:hidden"
                 aria-expanded={open}
                 aria-controls="mobile-nav"
                 aria-label={open ? "Close menu" : "Open menu"}
@@ -111,7 +111,7 @@ export function Navbar() {
           <motion.div
             id="mobile-nav"
             data-lenis-prevent
-            className="fixed inset-x-0 top-16 bottom-0 z-40 overflow-y-auto bg-cream lg:hidden"
+            className="fixed inset-x-0 top-16 bottom-0 z-40 overflow-y-auto bg-white lg:hidden"
             initial={reduce ? false : { opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={reduce ? undefined : { opacity: 0 }}
@@ -136,7 +136,7 @@ export function Navbar() {
                         href={link.href}
                         aria-current={active ? "page" : undefined}
                         className={`block border-b border-line py-4 font-serif text-[1.7rem] leading-tight transition-colors duration-300 ${
-                          active ? "text-forest" : "text-ink"
+                          active ? "text-blue" : "text-ink"
                         }`}
                       >
                         {link.label}

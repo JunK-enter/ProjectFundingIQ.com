@@ -29,8 +29,8 @@ export default function ForContractorsPage() {
           </>
         }
         image={{
-          src: "/images/roofing.jpg",
-          alt: "Two roofers measuring a residential shingle roof",
+          src: "/images/solar.jpg",
+          alt: "An installer carrying a solar panel onto a residential tile roof",
         }}
       >
         <p>
@@ -43,7 +43,7 @@ export default function ForContractorsPage() {
       <section className="border-t border-line py-16 md:py-20">
         <Container className="grid gap-10 lg:grid-cols-12">
           <div className="lg:col-span-5">
-            <p className="eyebrow text-forest">Why projects stall</p>
+            <p className="eyebrow text-blue">Why projects stall</p>
             <h2 className="mt-3 font-serif text-3xl text-ink sm:text-4xl">
               The work was never the objection.
             </h2>
@@ -65,11 +65,11 @@ export default function ForContractorsPage() {
         </Container>
       </section>
 
-      <section className="bg-paper py-16 md:py-20">
+      <section className="bg-surface py-16 md:py-20">
         <Container>
           <div className="grid gap-8 lg:grid-cols-12">
             <div className="lg:col-span-5">
-              <p className="eyebrow text-forest">Where an HEA may enter</p>
+              <p className="eyebrow text-blue">Where an HEA may enter</p>
               <h2 className="mt-3 font-serif text-3xl text-ink sm:text-4xl">
                 After the yes, when the payment is the pause.
               </h2>
@@ -128,10 +128,10 @@ export default function ForContractorsPage() {
         intro="These are illustrations of the kind of job that stalls. They are not a claim that any of them would qualify."
       />
 
-      <section id="introduce" className="bg-paper py-16 md:py-20">
+      <section id="introduce" className="bg-surface py-16 md:py-20">
         <Container className="grid gap-10 lg:grid-cols-12">
           <div className="lg:col-span-5">
-            <p className="eyebrow text-forest">How to introduce it</p>
+            <p className="eyebrow text-blue">How to introduce it</p>
             <h2 className="mt-3 font-serif text-3xl text-ink sm:text-4xl">
               Say less than you think you need to.
             </h2>
@@ -142,7 +142,7 @@ export default function ForContractorsPage() {
               wanted project is waiting. Then stop. You do not need a rate, a
               term, or a prediction.
             </p>
-            <blockquote className="mt-6 border-l-2 border-gold pl-5">
+            <blockquote className="mt-6 border-l-2 border-sky pl-5">
               <p className="font-serif text-xl italic leading-relaxed text-ink sm:text-2xl">
                 “If another monthly payment is what is holding this, some
                 eligible homeowners look at a Home Equity Agreement. I don’t
@@ -156,7 +156,7 @@ export default function ForContractorsPage() {
             <p className="mt-6">
               <Link
                 href="/resources/how-contractors-introduce-an-hea"
-                className="inline-flex min-h-11 items-center font-medium text-forest"
+                className="inline-flex min-h-11 items-center font-medium text-blue"
               >
                 Read the conversation guide →
               </Link>

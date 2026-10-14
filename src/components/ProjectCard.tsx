@@ -12,7 +12,7 @@ export function ProjectCard({
 }) {
   return (
     <article
-      className="group h-full overflow-hidden rounded-[14px] border border-line bg-paper motion-safe:transition-[box-shadow,border-color] motion-safe:duration-500 motion-safe:hover:border-forest/15 motion-safe:hover:shadow-[0_18px_40px_rgba(16,44,38,0.08)]"
+      className="group h-full overflow-hidden rounded-[14px] border border-line bg-white motion-safe:transition-[box-shadow,border-color] motion-safe:duration-500 motion-safe:hover:border-blue/15 motion-safe:hover:shadow-[0_18px_40px_rgba(15,30,70,0.08)]"
     >
       <div
         className={`relative overflow-hidden ${

@@ -27,13 +27,13 @@ export default function ResourcesPage() {
         </p>
       </PageHero>
 
-      <nav aria-label="Resource categories" className="border-y border-line bg-paper">
+      <nav aria-label="Resource categories" className="border-y border-line bg-surface">
         <Container className="flex gap-2 overflow-x-auto py-3">
           {resourceCategories.map((category) => (
             <a
               key={category.id}
               href={`#${category.id}`}
-              className="shrink-0 rounded-full border border-line bg-cream px-3 py-2 text-sm text-ink hover:bg-sage"
+              className="shrink-0 rounded-full border border-line bg-white px-3 py-2 text-sm text-ink hover:bg-tint"
             >
               {category.label}
             </a>
@@ -53,7 +53,7 @@ export default function ResourcesPage() {
                     <li key={article.slug}>
                       <Link
                         href={`/resources/${article.slug}`}
-                        className="group grid gap-3 py-6 transition-colors duration-300 hover:text-forest sm:grid-cols-[1fr_auto] sm:items-center"
+                        className="group grid gap-3 py-6 transition-colors duration-300 hover:text-blue sm:grid-cols-[1fr_auto] sm:items-center"
                       >
                         <span>
                           <span className="block font-serif text-2xl text-ink">
@@ -64,7 +64,7 @@ export default function ResourcesPage() {
                           </span>
                         </span>
                         <ArrowRight
-                          className="h-4 w-4 text-forest motion-safe:transition-transform motion-safe:duration-300 motion-safe:group-hover:translate-x-1"
+                          className="h-4 w-4 text-blue motion-safe:transition-transform motion-safe:duration-300 motion-safe:group-hover:translate-x-1"
                           aria-hidden
                         />
                       </Link>

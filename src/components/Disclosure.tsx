@@ -8,7 +8,7 @@ export function Disclosure({
   return (
     <p
       className={`text-sm leading-relaxed ${
-        tone === "dark" ? "text-cream/65" : "text-muted"
+        tone === "dark" ? "text-white/65" : "text-muted"
       } ${className}`}
     >
       ProjectFundingIQ provides educational information for contractors and home

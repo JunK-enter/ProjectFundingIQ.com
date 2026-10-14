@@ -68,15 +68,15 @@ function Stair({
   return (
     <motion.li
       style={{ y, opacity }}
-      className={`group relative flex flex-col justify-between overflow-hidden rounded-[14px] border border-cream/10 bg-forest p-6 transition-colors duration-500 hover:border-gold/40 hover:bg-[#1d463b] ${heights[index]}`}
+      className={`group relative flex flex-col justify-between overflow-hidden rounded-[14px] border border-white/10 bg-[#13264a] p-6 transition-colors duration-500 hover:border-sky/50 hover:bg-blue ${heights[index]}`}
     >
       <div>
-        <span className="font-serif text-4xl text-gold">{step.number}</span>
+        <span className="font-serif text-4xl text-sky">{step.number}</span>
         <svg
           aria-hidden
           viewBox="0 0 200 24"
           preserveAspectRatio="none"
-          className="mt-4 h-5 w-full text-gold/50"
+          className="mt-4 h-5 w-full text-sky/50"
         >
           <motion.path
             d="M0 2 Q 25 22 50 2 Q 75 22 100 2 Q 125 22 150 2 Q 175 22 200 2"
@@ -88,10 +88,10 @@ function Stair({
         </svg>
       </div>
       <div className="mt-8">
-        <h3 className="font-serif text-2xl leading-snug text-cream">
+        <h3 className="font-serif text-2xl leading-snug text-white">
           {step.title}
         </h3>
-        <p className="mt-3 text-sm leading-relaxed text-cream/75">
+        <p className="mt-3 text-sm leading-relaxed text-white/75">
           {step.body}
         </p>
       </div>

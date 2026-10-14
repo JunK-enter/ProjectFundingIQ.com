@@ -32,12 +32,12 @@ export function Logo({
       href="/"
       onClick={onClick}
       className={`inline-flex min-h-11 items-center gap-2 font-serif text-[1.2rem] leading-none tracking-tight sm:text-[1.45rem] ${
-        tone === "light" ? "text-cream" : "text-forest"
+        tone === "light" ? "text-white" : "text-blue"
       } ${className}`}
     >
       <span
         aria-hidden
-        className="inline-block h-2 w-2 shrink-0 bg-gold"
+        className="inline-block h-2 w-2 shrink-0 bg-sky"
       />
       ProjectFundingIQ
     </Link>
