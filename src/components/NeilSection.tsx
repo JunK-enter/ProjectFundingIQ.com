@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { neilUrl, partnerTransition } from "@/content/site";
+import { neilTransition, neilUrl } from "@/content/site";
 import { Button } from "./Button";
 import { Container } from "./Container";
 import { Reveal } from "./Reveal";
@@ -38,10 +38,14 @@ export function NeilSection() {
               questions about the partner process.
             </p>
             <div className="mt-8">
-              <Button href={neilUrl} external>
+              <Button
+                href={neilUrl}
+                external
+                externalLabel="opens Neil’s calendar"
+              >
                 Talk With Neil
               </Button>
-              <p className="mt-3 text-sm text-muted">{partnerTransition}</p>
+              <p className="mt-3 text-sm text-muted">{neilTransition}</p>
             </div>
           </Reveal>
         </div>

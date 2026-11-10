@@ -30,10 +30,11 @@ export default function PrivacyPage() {
               of customer records.
             </p>
             <p>
-              If you choose “Become a Partner” or “Talk With Neil,” you leave
-              this website for the HomeWealthIQ partner experience. That
-              destination has its own privacy practices. ProjectFundingIQ does
-              not control them.
+              If you choose “Become a Partner,” you leave this website for the
+              HomeWealthIQ partner experience. If you choose “Talk With Neil,”
+              you leave this website for a scheduling page. Those destinations
+              have their own privacy practices. ProjectFundingIQ does not
+              control them.
             </p>
             <p>
               Basic technical information, such as the data a host uses to
