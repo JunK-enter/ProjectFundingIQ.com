@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { neilUrl, partnerTransition } from "@/content/site";
 import { Button } from "./Button";
 import { Container } from "./Container";
@@ -9,18 +10,20 @@ export function NeilSection() {
       <Container>
         <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-16">
           <Reveal className="lg:col-span-5">
-            <div className="relative mx-auto aspect-[4/5] max-w-sm overflow-hidden rounded-[14px] border border-line bg-tint">
-              <div className="absolute inset-0 flex flex-col justify-between p-7">
-                <p className="eyebrow text-blue">Partner contact</p>
-                <div>
-                  <div className="flex h-20 w-20 items-center justify-center rounded-full bg-blue font-serif text-2xl text-white">
-                    NO
-                  </div>
-                  <p className="mt-5 font-serif text-3xl text-ink">Neil Okun</p>
-                  <p className="mt-2 max-w-[16rem] text-sm leading-relaxed text-muted">
-                    Partner contact for contractors exploring the program.
-                  </p>
-                </div>
+            <div className="relative mx-auto aspect-[4/5] max-w-sm overflow-hidden rounded-[14px] border border-line bg-navy">
+              <Image
+                src="/images/neil.jpg"
+                alt="Neil Okun, partner contact for contractors exploring the program"
+                fill
+                sizes="(min-width: 1024px) 24rem, 90vw"
+                className="object-cover"
+              />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy via-navy/80 to-transparent px-7 pb-7 pt-24">
+                <p className="eyebrow text-sky">Partner contact</p>
+                <p className="mt-3 font-serif text-3xl text-white">Neil Okun</p>
+                <p className="mt-2 max-w-[16rem] text-sm leading-relaxed text-white/80">
+                  Partner contact for contractors exploring the program.
+                </p>
               </div>
             </div>
           </Reveal>
