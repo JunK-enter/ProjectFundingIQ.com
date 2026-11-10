@@ -39,7 +39,10 @@ export default function PrivacyPage() {
             <p>
               Basic technical information, such as the data a host uses to
               deliver pages, may be processed by the site’s hosting provider in
-              the ordinary course of serving the website.
+              the ordinary course of serving the website. The site may also
+              record anonymous click positions (page path and where on the page
+              a click happened) so the team can see which areas get attention.
+              That click map is not used to identify a person.
             </p>
             <p>
               This notice will be replaced when a reviewed privacy policy is

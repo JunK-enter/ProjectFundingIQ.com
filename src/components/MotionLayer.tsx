@@ -2,8 +2,8 @@
 
 import { ReactLenis } from "lenis/react";
 import { useReducedMotion } from "motion/react";
+import { ClickTracker } from "./ClickTracker";
 import { ScrollProgress } from "./velora/scroll-progress";
-import { SmoothCursor } from "./velora/smooth-cursor";
 
 export function MotionLayer() {
   const reduce = useReducedMotion();
@@ -14,7 +14,7 @@ export function MotionLayer() {
         <ReactLenis root options={{ lerp: 0.11, wheelMultiplier: 0.95 }} />
       ) : null}
       <ScrollProgress />
-      <SmoothCursor dotClassName="bg-white" ringClassName="border-white/80" />
+      <ClickTracker />
     </>
   );
 }
