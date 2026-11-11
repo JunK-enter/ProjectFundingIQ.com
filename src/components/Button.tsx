@@ -7,6 +7,8 @@ type ButtonProps = {
   children: ReactNode;
   variant?: "primary" | "secondary" | "inverse";
   external?: boolean;
+  /** Screen-reader note for links that leave this site. */
+  externalLabel?: string;
   size?: "md" | "lg";
   className?: string;
 };
@@ -28,6 +30,7 @@ export function Button({
   children,
   variant = "primary",
   external = false,
+  externalLabel = "opens the HomeWealthIQ partner experience",
   size = "md",
   className = "",
 }: ButtonProps) {
@@ -61,10 +64,7 @@ export function Button({
         rel="noopener noreferrer"
       >
         {content}
-        <span className="sr-only">
-          {" "}
-          (opens the HomeWealthIQ partner experience)
-        </span>
+        <span className="sr-only"> ({externalLabel})</span>
       </a>
     );
   }

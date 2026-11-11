@@ -30,15 +30,19 @@ export default function PrivacyPage() {
               of customer records.
             </p>
             <p>
-              If you choose “Become a Partner” or “Talk With Neil,” you leave
-              this website for the HomeWealthIQ partner experience. That
-              destination has its own privacy practices. ProjectFundingIQ does
-              not control them.
+              If you choose “Become a Partner,” you leave this website for the
+              HomeWealthIQ partner experience. If you choose “Talk With Neil,”
+              you leave this website for a scheduling page. Those destinations
+              have their own privacy practices. ProjectFundingIQ does not
+              control them.
             </p>
             <p>
               Basic technical information, such as the data a host uses to
               deliver pages, may be processed by the site’s hosting provider in
-              the ordinary course of serving the website.
+              the ordinary course of serving the website. The site may also
+              record anonymous click positions (page path and where on the page
+              a click happened) so the team can see which areas get attention.
+              That click map is not used to identify a person.
             </p>
             <p>
               This notice will be replaced when a reviewed privacy policy is

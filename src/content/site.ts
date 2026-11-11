@@ -1,7 +1,10 @@
 export const partnerUrl =
   "https://partner.homewealthiq.com/recruiter/neil-okun/apply";
 
-export const neilUrl = "https://partner.homewealthiq.com/recruiter/neil-okun";
+export const neilUrl = "https://calendly.com/neil-obm/30min";
+
+export const neilTransition =
+  "You’ll open Neil’s calendar to schedule a 30-minute call.";
 
 export const partnerTransition =
   "You’ll continue to the HomeWealthIQ partner experience.";
