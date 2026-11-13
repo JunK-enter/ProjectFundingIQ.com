@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next";
 import { articles } from "@/content/resources";
 import { siteUrl } from "@/lib/seo";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date("2026-10-07");
   const paths = [

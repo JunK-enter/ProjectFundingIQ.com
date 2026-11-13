@@ -2,8 +2,12 @@ import type { NextConfig } from "next";
 import path from "node:path";
 
 const nextConfig: NextConfig = {
-  cacheComponents: true,
-  partialPrefetching: true,
+  output: "export",
+  trailingSlash: true,
+  images: { unoptimized: true },
+  experimental: {
+    agentUpgrade: "security",
+  },
   allowedDevOrigins: ["127.0.0.1", "localhost"],
   turbopack: {
     root: path.resolve(process.cwd()),

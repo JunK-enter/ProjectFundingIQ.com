@@ -3,13 +3,8 @@ import { disclosure, footerExplore, footerLegal, partnerTransition, partnerUrl }
 import { Container } from "./Container";
 import { Logo } from "./Logo";
 
-async function currentYear() {
-  "use cache";
-  return new Date().getFullYear();
-}
-
-export async function Footer() {
-  const year = await currentYear();
+export function Footer() {
+  const year = new Date().getFullYear();
 
   return (
     <footer

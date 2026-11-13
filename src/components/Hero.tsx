@@ -113,7 +113,7 @@ export function Hero() {
                   src="/images/hero.jpg"
                   alt="A contractor reviewing residential floor plans during a project conversation"
                   fill
-                  priority
+                  preload
                   sizes="(min-width: 1024px) 46vw, 100vw"
                   className="hero-photo !inset-auto !bottom-0 !left-0 !h-[175%] !w-full max-w-none object-cover object-bottom"
                 />
