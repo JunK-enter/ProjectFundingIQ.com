@@ -1,5 +1,6 @@
 import { ComparisonTable } from "@/components/ComparisonTable";
 import { ContractorJourney } from "@/components/ContractorJourney";
+import { EquityCalculatorCTA } from "@/components/EquityCalculatorCTA";
 import { HEAExplainer } from "@/components/HEAExplainer";
 import { Hero } from "@/components/Hero";
 import { LostProjects } from "@/components/LostProjects";
@@ -16,6 +17,7 @@ export default function HomePage() {
     <>
       <Hero />
       <TradeMarquee />
+      <EquityCalculatorCTA />
       <StallStory />
       <ProjectGrid />
       <HEAExplainer />

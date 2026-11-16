@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/how-heas-work",
     "/for-contractors",
     "/resources",
+    "/calculator",
     "/about",
     "/privacy",
     "/terms",

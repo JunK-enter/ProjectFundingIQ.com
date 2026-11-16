@@ -26,6 +26,7 @@ export const footerExplore = [
   { href: "/how-heas-work", label: "How HEAs Work" },
   { href: "/for-contractors", label: "For Contractors" },
   { href: "/resources", label: "Resources" },
+  { href: "/calculator", label: "Home Equity Calculator" },
   { href: "/about", label: "About" },
 ] as const;
 
