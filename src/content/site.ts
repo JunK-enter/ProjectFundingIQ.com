@@ -1,6 +1,12 @@
 export const partnerUrl =
   "https://partner.homewealthiq.com/recruiter/neil-okun/apply";
 
+export const equityCalculatorUrl =
+  "https://barastone.app/calculator?partner=MIJ0YRFW";
+
+export const equityCalculatorTransition =
+  "You’ll continue to the Barastone home equity calculator.";
+
 export const neilUrl = "https://calendly.com/neil-obm/30min";
 
 export const neilTransition =
@@ -26,7 +32,6 @@ export const footerExplore = [
   { href: "/how-heas-work", label: "How HEAs Work" },
   { href: "/for-contractors", label: "For Contractors" },
   { href: "/resources", label: "Resources" },
-  { href: "/calculator", label: "Home Equity Calculator" },
   { href: "/about", label: "About" },
 ] as const;
 

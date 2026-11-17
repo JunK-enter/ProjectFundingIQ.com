@@ -1,4 +1,5 @@
-import { Calculator, ShieldCheck } from "lucide-react";
+import { Calculator } from "lucide-react";
+import { equityCalculatorTransition, equityCalculatorUrl } from "@/content/site";
 import { Button } from "./Button";
 import { Container } from "./Container";
 import { Magnetic } from "./Magnetic";
@@ -35,20 +36,24 @@ export function EquityCalculatorCTA() {
               How much equity is in the home?
             </h2>
             <p className="mt-5 max-w-xl text-lg leading-relaxed text-white/85">
-              Enter a home value and the balances secured against it to see a
-              simple, informational equity estimate in eight short steps.
+              Start with a home value and the balances secured against it to
+              see a simple, informational estimate of home equity.
             </p>
             <div className="mt-9">
               <Magnetic className="w-full sm:w-auto">
-                <Button href="/calculator" variant="inverse" size="lg" className="w-full sm:w-auto">
+                <Button
+                  href={equityCalculatorUrl}
+                  external
+                  externalLabel="opens the Barastone home equity calculator"
+                  variant="inverse"
+                  size="lg"
+                  className="w-full sm:w-auto"
+                >
                   Explore Your Home Equity
                 </Button>
               </Magnetic>
             </div>
-            <p className="mt-5 flex items-center gap-2 text-sm text-white/75">
-              <ShieldCheck className="h-4 w-4 shrink-0 text-sky" aria-hidden />
-              Nothing you enter is sent or saved.
-            </p>
+            <p className="mt-5 text-sm text-white/75">{equityCalculatorTransition}</p>
           </Reveal>
 
           <Reveal className="lg:col-span-5 lg:col-start-8" delay={0.1}>
