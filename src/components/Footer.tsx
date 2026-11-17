@@ -1,5 +1,13 @@
 import Link from "next/link";
-import { disclosure, footerExplore, footerLegal, partnerTransition, partnerUrl } from "@/content/site";
+import {
+  contactEmail,
+  contactPhone,
+  disclosure,
+  footerExplore,
+  footerLegal,
+  partnerTransition,
+  partnerUrl,
+} from "@/content/site";
 import { Container } from "./Container";
 import { Logo } from "./Logo";
 
@@ -12,7 +20,7 @@ export function Footer() {
       className="border-t border-white/10 bg-navy text-white"
     >
       <Container className="py-14 md:py-16">
-        <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr]">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
           <div>
             <Logo tone="light" />
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/75">
@@ -65,6 +73,35 @@ export function Footer() {
             <p className="mt-4 max-w-xs text-xs leading-relaxed text-white/55">
               {partnerTransition}
             </p>
+          </div>
+          <div>
+            <p className="eyebrow text-sky">Contact</p>
+            <ul className="mt-4 space-y-2.5">
+              <li>
+                <a
+                  href={contactPhone.href}
+                  className="text-sm text-white/85 transition-colors duration-300 hover:text-white"
+                >
+                  {contactPhone.display}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`mailto:${contactEmail}`}
+                  className="break-all text-sm text-white/85 transition-colors duration-300 hover:text-white"
+                >
+                  {contactEmail}
+                </a>
+              </li>
+              <li>
+                <Link
+                  href="/#contact"
+                  className="text-sm text-white/85 transition-colors duration-300 hover:text-white"
+                >
+                  Book a call with Neil
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
         <div className="mt-12 border-t border-white/10 pt-8">

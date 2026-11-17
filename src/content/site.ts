@@ -12,6 +12,13 @@ export const neilUrl = "https://calendly.com/neil-obm/30min";
 export const neilTransition =
   "You’ll open Neil’s calendar to schedule a 30-minute call.";
 
+export const contactPhone = {
+  display: "(213) 455-5855",
+  href: "tel:+12134555855",
+};
+
+export const contactEmail = "Chloe@projectfundingiq.com";
+
 export const partnerTransition =
   "You’ll continue to the HomeWealthIQ partner experience.";
 
